@@ -81,7 +81,7 @@ REST Assured dependency: Includes JsonPath & XmlPath
 * Header & Body Validation
 * Debugging Tests
 * Schema Validation
-* Groovy Language
+* Groovy Language (Collections & Extract)
 
 
 ### DSL with a Fluent Interface
@@ -119,7 +119,7 @@ assertThat(fruitList)
 
 ### Lambda and Functions
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ```
  Stream.of(2, 4, 8, 6, 9)
@@ -161,7 +161,47 @@ A network of logically interconnected classes with method chaining that enables 
 
 
 
+
+### Today 07-03-2025
+
+### JsonPath & Groovy Language (Collections & Extract)
+* .size(), .max(), .min(), 
+* .findAll
+* .extract()
+
+
+### Object Mapping (Marshalling/Unmarshalling)
+![Marshalling](assets/marshalling.png)
+* Marshalling: The process of transforming the memory representation of an object to
+  a data format suitable for storage or transmission
+* Unmarshalling: opposite of marshalling
+
+
+#### `Syntax
+```java
+.as(Class<T> cls)
+.as(Class<T> cls, ObjectMapperType mapperType)
+.as(Class<T> cls, ObjectMapper mapper
+```
+
 ------------
+
+
+### Week 5: Test Automation Framework Basics
+* Integrating REST-assured with TestNG or JUnit:
+  * Structuring test cases (TestNG Annotations). 
+  * Using data providers for parameterized tests.
+
+* Introduction to Maven:
+  * Dependency management for REST-assured.
+  * Running tests via Maven.
+
+* Configuring reusable components:
+  * Setting up base URIs and base paths.
+  * Using request and response specifications.
+
+
+
 
 ## APIs
 
@@ -169,4 +209,4 @@ A network of logically interconnected classes with method chaining that enables 
 * https://jsonplaceholder.typicode.com/
 * https://reqres.in/
 
-![alt text](image.png)
+![alt text](assets/image.png)

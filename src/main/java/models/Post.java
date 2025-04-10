@@ -1,4 +1,3 @@
 package models;
 
-public class PostModel {
-}
+public record Post(String title, String body, int userId) { }
